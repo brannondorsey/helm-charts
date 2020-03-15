@@ -3,23 +3,23 @@ entries:
   mprime:
   - apiVersion: v2
     appVersion: p95v298b6
-    created: "2020-03-15T17:52:23.352458-04:00"
+    created: "2020-03-15T18:08:54.855338-04:00"
     description: A Helm chart for Kubernetes
-    digest: d4524d0aff12fac224f6034a1add8111a89034afac6c40ae330386fefe311e66
+    digest: f2a645fe05c0296a849553e827a70ea4539a9c366747ecf3435f1fb08ccf638b
     name: mprime
     type: application
     urls:
-    - https://helm.brannon.online/mprime-0.0.1.tgz
+    - http://helm.brannon.online/repo/mprime-0.0.1.tgz
     version: 0.0.1
   xmrig:
   - apiVersion: v2
     appVersion: 5.8.2
-    created: "2020-03-15T17:52:23.352922-04:00"
+    created: "2020-03-15T18:08:54.855783-04:00"
     description: Deploy Monero miners in a Kubernetes cluster
-    digest: 3081b76b1cdecc8b4969fd83fd7c3a738bc2ddf67ba175cc007e83ab31e678da
+    digest: e7b9734ff6af7518e54c3f3dd47d67d3f73feb1e6273ab85b29b024615766f5e
     name: xmrig
     type: application
     urls:
-    - https://helm.brannon.online/xmrig-0.0.1.tgz
+    - http://helm.brannon.online/repo/xmrig-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-15T17:52:23.350293-04:00"
+generated: "2020-03-15T18:08:54.853489-04:00"
