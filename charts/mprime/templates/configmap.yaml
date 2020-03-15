@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "mprime.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "mprime.labels" . | nindent 4 }}
+data:
+  prime.txt: |
+    {{- .Values.primeTxtConfig | nindent 4 }}
+
+  # local.txt: |
+  #   WorkerThreads=2
+  #   CoresPerTest=1
+  #   Memory=100
+  #   ComputerID=

@@ -1,0 +1,36 @@
+# Default values for xmrig.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: brannondorsey/alpine-xmrig
+  pullPolicy: IfNotPresent
+
+pool: xmr.pool.minergate.com:45700
+poolDonationPercent: 1 # 1/100
+email: brannon@brannondorsey.com # replace this with a real email
+password: p # replace this with a real password
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+resources:
+  limits:
+    cpu: 10500m
+    memory: 9Gi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
