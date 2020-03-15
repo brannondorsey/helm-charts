@@ -1,6 +1,6 @@
 apiVersion: v2
 name: mprime
-description: A Helm chart for Kubernetes
+description: Donate compute to search for prime numbers!
 
 # A chart can be either an 'application' or a 'library' chart.
 #
