@@ -2,8 +2,8 @@
 
 This repo hosts several bespoke helm chart repositories.
 
-- `mprime`: Donate compute to search for prime numbers via the [Great Internet Mersenne Prime Search](https://www.mersenne.org/) (GIMPS)!
-- `xmrig`: Mine [Monero](https://www.getmonero.org/) via leftover K8s cluster resources
+- [`mprime`](charts/mprime): Donate compute to search for prime numbers via the [Great Internet Mersenne Prime Search](https://www.mersenne.org/) (GIMPS)!
+- [`xmrig`](charts/xmrig): Mine [Monero](https://www.getmonero.org/) via leftover K8s cluster resources.
 
 ## Quickstart
 
