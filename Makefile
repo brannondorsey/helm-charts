@@ -1,5 +1,5 @@
 
-REPO_URL=http://helm.brannon.online/repo
+REPO_URL=https://helm.brannon.online/repo
 
 .PHONY: default package index lint debug deploy-default check-env-chart-name
 
