@@ -10,6 +10,7 @@ package:
 
 index:
 	helm repo index --url $(REPO_URL) repo
+	mv repo/index.yaml index.yaml
 
 lint:
 	helm lint charts/*
