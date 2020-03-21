@@ -3,6 +3,19 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 
+# The max memory mprime will be configured to use, specified in megabytes.
+# A higher value can improve calculation speed. This value is separate from any
+# resource.limits.memory that is set, because it gets translated to a config field
+# in prime.txt. This value MUST be less than any memory limits configured below or
+# pods will receive OOM errors.
+memoryMB: 8
+
+# This configures how many unique workloads are being computed by a replica at any given time.
+# Note that all CPU threads available will be used independent of this value, so setting this
+# value higher won't necessarily yield faster results (e.g. 1 worker using 4 CPUs may be the
+# same as 2 workers using 2 CPUs).
+workersPerReplica: 2
+
 primeTxtConfig: |
   # Replace your username here!
   V5UserID=ANONYMOUS

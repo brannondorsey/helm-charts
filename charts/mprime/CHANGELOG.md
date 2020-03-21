@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.0
+
+Adds more configuration values.
+
+- Add `workersPerReplica` to `values.yaml` to set `WorkerThreads` in the `local.txt` generated for each mprime replica.
+- Add `memoryMB` to `values.yaml` to set max memory via the `Memory` config in the `local.txt` generated for each mprime replica.
+
 ## v0.1.0
 
 Bug fixes.
