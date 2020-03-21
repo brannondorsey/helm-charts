@@ -1,5 +1,8 @@
-{{ .Values.replicaCount }} mprime pod(s) have been deployed to the cluster. You can view
+You've deployed {{ .Values.replicaCount }} mprime pod(s) to the cluster. You can view
 the logs of one of these pods once by running the following commands:
 
   export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "mprime.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
   kubectl logs --namespace {{ .Release.Namespace }} $POD_NAME
+
+Login to https://www.mersenne.org/ to view work assignments, progress, and results.
+Good luck searching for primes. May the odds be ever in your favor.
