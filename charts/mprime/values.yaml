@@ -4,16 +4,18 @@
 replicaCount: 1
 
 primeTxtConfig: |
+  # Replace your username here!
+  V5UserID=ANONYMOUS
+  # Default to the trial factoring task
+  WorkPreference=1
   V24OptionsConverted=1
   WGUID_version=2
   StressTester=0
   UsePrimenet=1
   DialUp=0
-  V5UserID=ANONYMOUS # Replace your username here!
   Priority=1
-  DaysOfWork=3
+  DaysOfWork=1
   RunOnBattery=1
-  WorkPreference=1 # Default to the trial factoring task
 
   [PrimeNet]
   Debug=0

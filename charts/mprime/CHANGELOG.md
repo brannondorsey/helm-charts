@@ -2,6 +2,13 @@
 
 ## v0.1.0
 
+Bug fixes.
+
+- Fix `V5UserID="ANONYMOUS "` invalid user id due to ini `# comments` at end of line in `prime.txt`.
+- Set default `DaysOfWork` to 1 instead of 3 in default `prime.txt`
+
+## v0.1.0
+
 Initial public release.
 
 - Default release uses ANONYMOUS GIMPS username

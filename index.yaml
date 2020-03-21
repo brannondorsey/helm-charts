@@ -3,7 +3,17 @@ entries:
   mprime:
   - apiVersion: v1
     appVersion: p95v298b6
-    created: "2020-03-21T15:54:27.217186-04:00"
+    created: "2020-03-21T16:08:14.186492-04:00"
+    description: Donate compute to search for prime numbers!
+    digest: 8731bfa91c3ff368d922dc3d72e79b47a609de9afd6bd716ce086d0336069515
+    icon: https://helm.brannon.online/icons/mprime.png
+    name: mprime
+    urls:
+    - https://helm.brannon.online/repo/mprime-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: p95v298b6
+    created: "2020-03-21T16:08:14.186147-04:00"
     description: Donate compute to search for prime numbers!
     digest: c942f4c2244da2b3ff09c6a359a5eac3bfe43d1e3a25ba9795acf339b449f33a
     icon: https://helm.brannon.online/icons/mprime.png
@@ -13,7 +23,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: p95v298b6
-    created: "2020-03-21T15:54:27.216747-04:00"
+    created: "2020-03-21T16:08:14.18505-04:00"
     description: Donate compute to search for prime numbers!
     digest: 5ddfc512a17718604013e01799da4066f7160d3091dea0de8fabf0fb2d4ee78f
     name: mprime
@@ -24,12 +34,12 @@ entries:
   xmrig:
   - apiVersion: v2
     appVersion: 5.8.2
-    created: "2020-03-21T15:54:27.217516-04:00"
+    created: "2020-03-21T16:08:14.186796-04:00"
     description: Deploy Monero miners in a Kubernetes cluster
-    digest: 363f448b3cc36bb6826aa79561dacd0d0548ba3fa41e5976e55649411a07c1cd
+    digest: e6346a1cd45d8380a5e3fc80e225605665998034589d406e69a2dce85f42bcb6
     name: xmrig
     type: application
     urls:
     - https://helm.brannon.online/repo/xmrig-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-21T15:54:27.21564-04:00"
+generated: "2020-03-21T16:08:14.183002-04:00"
