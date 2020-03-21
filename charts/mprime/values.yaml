@@ -9,11 +9,11 @@ primeTxtConfig: |
   StressTester=0
   UsePrimenet=1
   DialUp=0
-  V5UserID=brannondorsey
+  V5UserID=ANONYMOUS # Replace your username here!
   Priority=1
   DaysOfWork=3
   RunOnBattery=1
-  WorkPreference=150
+  WorkPreference=1 # Default to the trial factoring task
 
   [PrimeNet]
   Debug=0
@@ -23,6 +23,8 @@ image:
   repository: brannondorsey/mprime
   pullPolicy: IfNotPresent
 
+# We recommend you impose resource limits as mprime will use 100% of the CPU you
+# allocate
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
