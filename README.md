@@ -2,7 +2,7 @@
 
 This repo hosts several helm charts for distributed computing projects made available via one helm repository.
 
-- [`folding-at-home`]: Donate compute for medical research through the Folding@home project and help cure diseases
+- [`folding-at-home`](charts/folding-at-home): Donate compute for medical research through the Folding@home project and help cure diseases
 - [`mprime`](charts/mprime): Donate compute to search for prime numbers via the [Great Internet Mersenne Prime Search](https://www.mersenne.org/) (GIMPS)!
 - [`xmrig`](charts/xmrig): Mine [Monero](https://www.getmonero.org/) via leftover K8s cluster resources.
 
