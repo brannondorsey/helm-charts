@@ -1,7 +1,8 @@
 # A Helm Chart Repository
 
-This repo hosts several helm charts made available via one helm repository.
+This repo hosts several helm charts for distributed computing projects made available via one helm repository.
 
+- [`folding-at-home]: Donate compute for medical research through the Folding@home project and help cure diseases
 - [`mprime`](charts/mprime): Donate compute to search for prime numbers via the [Great Internet Mersenne Prime Search](https://www.mersenne.org/) (GIMPS)!
 - [`xmrig`](charts/xmrig): Mine [Monero](https://www.getmonero.org/) via leftover K8s cluster resources.
 
@@ -18,9 +19,10 @@ Once installed you can browse the available charts in the repo.
 
 ```
 helm search repo brannon
-NAME          	CHART VERSION	APP VERSION	DESCRIPTION
-brannon/mprime	0.2.0        	p95v298b6  	Donate compute to search for prime numbers!
-brannon/xmrig 	0.1.0        	5.8.2      	Deploy Monero miners in a Kubernetes cluster
+NAME                   	CHART VERSION	APP VERSION	DESCRIPTION
+brannon/folding-at-home	0.1.0        	7.5.1      	Donate compute for medical research and help cu...
+brannon/mprime         	0.2.0        	p95v298b6  	Donate compute to search for prime numbers!
+brannon/xmrig          	0.1.0        	5.8.2      	Deploy Monero miners in a Kubernetes cluster
 ```
 
 Installing one is as simple as...
