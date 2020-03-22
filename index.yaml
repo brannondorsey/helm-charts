@@ -42,6 +42,16 @@ entries:
     - https://helm.brannon.online/repo/mprime-0.0.1.tgz
     version: 0.0.1
   xmrig:
+  - apiVersion: v1
+    appVersion: 5.8.2
+    created: "2020-03-21T22:43:20.186149-04:00"
+    description: Deploy Monero miners in a Kubernetes cluster
+    digest: 88f8fd794ea909f60b3e11550aa628ef29efacee776edf12a1a67691990aa7de
+    icon: https://helm.brannon.online/icons/xmrig.png
+    name: xmrig
+    urls:
+    - https://helm.brannon.online/repo/xmrig-0.1.0.tgz
+    version: 0.1.0
   - apiVersion: v2
     appVersion: 5.8.2
     created: "2020-03-21T17:57:42.065755-04:00"
@@ -52,4 +62,4 @@ entries:
     urls:
     - https://helm.brannon.online/repo/xmrig-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-21T17:57:42.059941-04:00"
+generated: "2020-03-21T22:43:20.180139-04:00"

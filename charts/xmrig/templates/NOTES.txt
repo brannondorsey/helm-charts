@@ -1,5 +1,8 @@
-{{ .Values.replicaCount }} xmrig mining pod(s) have been deployed to the cluster. You can view
+You've deployed {{ .Values.replicaCount }} xmrig mining pod(s) to the cluster. You can view
 the logs of one of these pods once by running the following commands:
 
   export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "xmrig.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
   kubectl logs --namespace {{ .Release.Namespace }} $POD_NAME
+
+View your mining pool's dashboard to confirm your pods are reporting their work correctly.
+Good luck and may the odds be ever in your favor.

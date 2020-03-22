@@ -6,6 +6,11 @@ metadata:
     {{- include "xmrig.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 100%
+      maxSurge: 100%
   selector:
     matchLabels:
       {{- include "xmrig.selectorLabels" . | nindent 6 }}
@@ -15,28 +20,16 @@ spec:
         {{- include "xmrig.selectorLabels" . | nindent 8 }}
     spec:
       automountServiceAccountToken: false
-      securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
-          securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:v{{ .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          # livenessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
-          # readinessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
           command:
             - ./xmrig
             - --donate-level
             - '{{ .Values.poolDonationPercent }}'
             - --max-cpu-usage
-            - '95'
+            - '98'
             - -o
             - {{ .Values.pool }}
             - -u
@@ -44,6 +37,7 @@ spec:
             - -p
             - {{ .Values.password }}
             - -k
+            - --randomx-mode={{ .Values.randomxMode }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

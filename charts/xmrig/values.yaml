@@ -9,25 +9,17 @@ image:
   pullPolicy: IfNotPresent
 
 pool: xmr.pool.minergate.com:45700
+email: email@example.com
+password: password
 poolDonationPercent: 1 # 1/100
-email: brannon@brannondorsey.com # replace this with a real email
-password: p # replace this with a real password
 
-podSecurityContext: {}
-  # fsGroup: 2000
-
-securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
+randomxMode: fast # also accepts "light" for replicas with < ~5GB RAM
 
 resources:
   limits:
-    cpu: 10500m
-    memory: 9Gi
+    # At least 5Gi is recommended for "fast" randomxMode. 512Mi can be used if
+    # running in "light" mode instead.
+    memory: 5Gi
 
 nodeSelector: {}
 

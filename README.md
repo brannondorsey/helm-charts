@@ -19,8 +19,8 @@ Once installed you can browse the available charts in the repo.
 ```
 helm search repo brannon
 NAME          	CHART VERSION	APP VERSION	DESCRIPTION
-brannon/mprime	0.0.1        	p95v298b6  	Donate compute to search for prime numbers!
-brannon/xmrig 	0.0.1        	5.8.2      	Deploy Monero miners in a Kubernetes cluster
+brannon/mprime	0.2.0        	p95v298b6  	Donate compute to search for prime numbers!
+brannon/xmrig 	0.1.0        	5.8.2      	Deploy Monero miners in a Kubernetes cluster
 ```
 
 Installing one is as simple as...
