@@ -9,6 +9,7 @@ package:
 	helm package --destination repo charts/*
 
 index:
+	# Try this approach eventually https://github.com/helm/helm/issues/4482
 	helm repo index --url $(REPO_URL) repo
 	mv repo/index.yaml index.yaml
 
