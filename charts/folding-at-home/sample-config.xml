@@ -1,0 +1,15 @@
+<config>
+  <!--
+    To set your user name, team and passkey just edit the text
+    in quotes below.
+  -->
+
+  <!-- User Information -->
+  <user value=""/>         <!-- Enter your user name here -->
+  <team value=""/>         <!-- Your team number -->
+  <passkey value=""/>      <!-- 32 hexadecimal characters if provided -->
+
+  <power value="full"/>    <!-- Throttling this at K8s level -->
+  <gpu value="false"/>      <!-- If true, attempt to autoconfigure GPUs -->
+  <fold-anon value="false"/>
+</config>

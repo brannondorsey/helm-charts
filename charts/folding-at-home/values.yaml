@@ -1,0 +1,29 @@
+# Default values for folding-at-home.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+
+# username, team, and passkey are all optional fields
+username: ""
+team: ""
+passkey: ""
+
+image:
+  repository: brannondorsey/fah
+  pullPolicy: IfNotPresent
+
+# We recommend you impose resource limits as Folding@home will use 100% of the CPU you
+# allocate
+resources: {}
+  # limits:
+  #   cpu: 2000m
+  #   memory: 512Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

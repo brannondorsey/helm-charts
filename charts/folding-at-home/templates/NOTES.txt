@@ -1,0 +1,7 @@
+You've deployed {{ .Values.replicaCount }} Folding@home pod(s) to the cluster. You can view
+the logs of one of these pods once by running the following commands:
+
+  export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "folding-at-home.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
+  kubectl logs --namespace {{ .Release.Namespace }} $POD_NAME
+
+You can view your donor stats at https://stats.foldingathome.org/donors.

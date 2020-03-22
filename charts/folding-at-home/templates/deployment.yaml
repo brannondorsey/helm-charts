@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "folding-at-home.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "folding-at-home.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 100%
+      maxSurge: 100%
+  selector:
+    matchLabels:
+      {{- include "folding-at-home.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "folding-at-home.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - name: config-volume
+              mountPath: /tmp/fahclient
+          command:
+            - sh
+            - "-c"
+            - |
+              /bin/sh << 'EOF'
+              # exit when any command fails
+              set -e
+              cp /tmp/fahclient/config.xml /etc/fahclient/config.xml
+              FAHClient --config /etc/fahclient/config.xml --config-rotate=false
+              EOF
+      volumes:
+        - name: config-volume
+          configMap:
+            # Provide the name of the ConfigMap containing the files you want
+            # to add to the container
+            name: {{ include "folding-at-home.fullname" . }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
