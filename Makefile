@@ -1,28 +1,30 @@
 
 REPO_URL=https://helm.brannon.online/repo
 
-.PHONY: default package index lint debug deploy-default check-env-chart-name
+.PHONY: default release package index lint debug deploy-default check-env-chart-name
 
-default: package index
+default: release
 
-package:
-	helm package --destination repo charts/*
+release: package index
 
-index:
-	# Try this approach eventually https://github.com/helm/helm/issues/4482
-	helm repo index --url $(REPO_URL) repo
-	mv repo/index.yaml index.yaml
+package: check-env-chart-name
+	mkdir -p "repo/$(CHART)"
+	helm package --destination "repo/$(CHART)" "charts/$(CHART)"
+
+index: check-env-chart-name
+	helm repo index --url "$(REPO_URL)/$(CHART)" --merge index.yaml "repo/$(CHART)"
+	mv "repo/$(CHART)/index.yaml" index.yaml
 
 lint:
 	helm lint charts/*
 
 debug: check-env-chart-name
-	helm upgrade --install --dry-run --debug $(CHART_NAME) charts/$(CHART_NAME)
+	helm upgrade --install --dry-run --debug $(CHART) charts/$(CHART)
 
 deploy-default: check-env-chart-name
-	helm upgrade --install $(CHART_NAME) charts/$(CHART_NAME)
+	helm upgrade --install $(CHART) charts/$(CHART)
 
 check-env-chart-name:
-ifndef CHART_NAME
-	$(error The CHART_NAME environment variable must be defined)
+ifndef CHART
+	$(error The CHART environment variable must be defined)
 endif

@@ -38,3 +38,13 @@ Each chart has its own README and CHANGELOG with information specific to its ins
 ## Maintenance
 
 This chart repository is maintained by Brannon Dorsey. For questions or suggestions, please open an issue instead of emailing me directly. PRs welcome 😸.
+
+## Dev
+
+New charts versions are released by bumping the chart version in `charts/mychart/Chart.yaml` and then running:
+
+```bash
+make release CHART=mychart
+```
+
+This will package the chart inside `repo/mychart/mychart-VERSION.tgz` and add the an entry to `index.yaml`. New commits pushed to the `master` branch are immediately released to https://helm.brannon.online and made available to the public via GH Pages.
