@@ -1,4 +1,4 @@
-# mprime (Prime95)
+# mprime (Prime95) Helm Chart
 
 [mprime] is the headless version of Prime95, the software used to search for prime numbers via the [Great Internet Mersenne Prime Search](https://www.mersenne.org/) (GIMPS).
 
