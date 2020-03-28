@@ -1,76 +1,98 @@
 apiVersion: v1
 entries:
   folding-at-home:
-    - apiVersion: v1
-      appVersion: 7.5.1
-      created: "2020-03-22T22:44:34.296811-04:00"
-      description: Donate compute for medical research and help cure diseases
-      digest: 9b95281a90e88d5e73587959f98a77efb63d3486ee4c0ca721a59f480a6680af
-      icon: https://helm.brannon.online/icons/fah.png
-      name: folding-at-home
-      urls:
-        - https://helm.brannon.online/repo/folding-at-home/folding-at-home-0.1.0.tgz
-      version: 0.1.0
+  - apiVersion: v1
+    appVersion: 7.5.1
+    created: "2020-03-22T22:44:34.296811-04:00"
+    description: Donate compute for medical research and help cure diseases
+    digest: 9b95281a90e88d5e73587959f98a77efb63d3486ee4c0ca721a59f480a6680af
+    icon: https://helm.brannon.online/icons/fah.png
+    name: folding-at-home
+    urls:
+    - https://helm.brannon.online/repo/folding-at-home/folding-at-home-0.1.0.tgz
+    version: 0.1.0
   mprime:
-    - apiVersion: v1
-      appVersion: p95v298b6
-      created: "2020-03-22T22:41:52.933707-04:00"
-      description: Donate compute to search for prime numbers!
-      digest: 24c7396c5ecf5be850bae926e1184915ddfd9dfc9780a494e58342e421321910
-      icon: https://helm.brannon.online/icons/mprime.png
-      name: mprime
-      urls:
-        - https://helm.brannon.online/repo/mprime/mprime-0.2.0.tgz
-      version: 0.2.0
-    - apiVersion: v1
-      appVersion: p95v298b6
-      created: "2020-03-22T22:41:52.933226-04:00"
-      description: Donate compute to search for prime numbers!
-      digest: 8731bfa91c3ff368d922dc3d72e79b47a609de9afd6bd716ce086d0336069515
-      icon: https://helm.brannon.online/icons/mprime.png
-      name: mprime
-      urls:
-        - https://helm.brannon.online/repo/mprime/mprime-0.1.1.tgz
-      version: 0.1.1
-    - apiVersion: v1
-      appVersion: p95v298b6
-      created: "2020-03-22T22:41:52.932343-04:00"
-      description: Donate compute to search for prime numbers!
-      digest: c942f4c2244da2b3ff09c6a359a5eac3bfe43d1e3a25ba9795acf339b449f33a
-      icon: https://helm.brannon.online/icons/mprime.png
-      name: mprime
-      urls:
-        - https://helm.brannon.online/repo/mprime/mprime-0.1.0.tgz
-      version: 0.1.0
-    - apiVersion: v2
-      appVersion: p95v298b6
-      created: "2020-03-22T22:41:52.931858-04:00"
-      description: Donate compute to search for prime numbers!
-      digest: 5ddfc512a17718604013e01799da4066f7160d3091dea0de8fabf0fb2d4ee78f
-      name: mprime
-      type: application
-      urls:
-        - https://helm.brannon.online/repo/mprime/mprime-0.0.1.tgz
-      version: 0.0.1
+  - apiVersion: v1
+    appVersion: p95v298b6
+    created: "2020-03-22T22:41:52.933707-04:00"
+    description: Donate compute to search for prime numbers!
+    digest: 24c7396c5ecf5be850bae926e1184915ddfd9dfc9780a494e58342e421321910
+    icon: https://helm.brannon.online/icons/mprime.png
+    name: mprime
+    urls:
+    - https://helm.brannon.online/repo/mprime/mprime-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: p95v298b6
+    created: "2020-03-22T22:41:52.933226-04:00"
+    description: Donate compute to search for prime numbers!
+    digest: 8731bfa91c3ff368d922dc3d72e79b47a609de9afd6bd716ce086d0336069515
+    icon: https://helm.brannon.online/icons/mprime.png
+    name: mprime
+    urls:
+    - https://helm.brannon.online/repo/mprime/mprime-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: p95v298b6
+    created: "2020-03-22T22:41:52.932343-04:00"
+    description: Donate compute to search for prime numbers!
+    digest: c942f4c2244da2b3ff09c6a359a5eac3bfe43d1e3a25ba9795acf339b449f33a
+    icon: https://helm.brannon.online/icons/mprime.png
+    name: mprime
+    urls:
+    - https://helm.brannon.online/repo/mprime/mprime-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: p95v298b6
+    created: "2020-03-22T22:41:52.931858-04:00"
+    description: Donate compute to search for prime numbers!
+    digest: 5ddfc512a17718604013e01799da4066f7160d3091dea0de8fabf0fb2d4ee78f
+    name: mprime
+    type: application
+    urls:
+    - https://helm.brannon.online/repo/mprime/mprime-0.0.1.tgz
+    version: 0.0.1
   xmrig:
-    - apiVersion: v1
-      appVersion: 5.8.2
-      created: "2020-03-22T22:41:03.482521-04:00"
-      description: Deploy Monero miners in a Kubernetes cluster
-      digest: 88f8fd794ea909f60b3e11550aa628ef29efacee776edf12a1a67691990aa7de
-      icon: https://helm.brannon.online/icons/xmrig.png
-      name: xmrig
-      urls:
-        - https://helm.brannon.online/repo/xmrig/xmrig-0.1.0.tgz
-      version: 0.1.0
-    - apiVersion: v2
-      appVersion: 5.8.2
-      created: "2020-03-22T22:41:03.482165-04:00"
-      description: Deploy Monero miners in a Kubernetes cluster
-      digest: 179c62fa775db03c6790a21c9e1389c21adb83f420d9534dfb372dc295c2cc11
-      name: xmrig
-      type: application
-      urls:
-        - https://helm.brannon.online/repo/xmrig/xmrig-0.0.1.tgz
-      version: 0.0.1
-generated: "2020-03-22T22:44:34.295642-04:00"
+  - apiVersion: v1
+    appVersion: 5.8.2
+    created: "2020-03-28T16:42:07.683967-04:00"
+    description: Deploy Monero miners in a Kubernetes cluster
+    digest: 255d91c64e269a4d1f9d4748362308b1b125c0bb7369fbcd6ea515052bcf59ba
+    home: https://github.com/brannondorsey/helm-charts/tree/master/charts/xmrig
+    icon: https://helm.brannon.online/icons/xmrig.png
+    keywords:
+    - monero
+    - crypto
+    - mining
+    - xmr
+    maintainers:
+    - email: brannon@brannondorsey.com
+      name: Brannon Dorsey
+      url: https://github.com/brannondorsey
+    name: xmrig
+    sources:
+    - https://github.com/brannondorsey/helm-charts
+    urls:
+    - https://helm.brannon.online/repo/xmrig/xmrig-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: 5.8.2
+    created: "2020-03-28T16:42:07.683452-04:00"
+    description: Deploy Monero miners in a Kubernetes cluster
+    digest: 88f8fd794ea909f60b3e11550aa628ef29efacee776edf12a1a67691990aa7de
+    icon: https://helm.brannon.online/icons/xmrig.png
+    name: xmrig
+    urls:
+    - https://helm.brannon.online/repo/xmrig/xmrig-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 5.8.2
+    created: "2020-03-28T16:42:07.681716-04:00"
+    description: Deploy Monero miners in a Kubernetes cluster
+    digest: 179c62fa775db03c6790a21c9e1389c21adb83f420d9534dfb372dc295c2cc11
+    name: xmrig
+    type: application
+    urls:
+    - https://helm.brannon.online/repo/xmrig/xmrig-0.0.1.tgz
+    version: 0.0.1
+generated: "2020-03-28T16:42:07.67931-04:00"

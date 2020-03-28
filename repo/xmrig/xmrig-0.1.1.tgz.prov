@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v1
+appVersion: 5.8.2
+description: Deploy Monero miners in a Kubernetes cluster
+home: https://github.com/brannondorsey/helm-charts/tree/master/charts/xmrig
+icon: https://helm.brannon.online/icons/xmrig.png
+keywords:
+- - monero
+- - crypto
+- - mining
+- - xmr
+maintainers:
+- - email: brannon@brannondorsey.com
+  name: Brannon Dorsey
+  url: https://github.com/brannondorsey
+name: xmrig
+sources:
+- - https://github.com/brannondorsey/helm-charts
+version: 0.1.1
+
+...
+files:
+  xmrig-0.1.1.tgz: sha256:255d91c64e269a4d1f9d4748362308b1b125c0bb7369fbcd6ea515052bcf59ba
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJef7afCRBgc5BkakKR0wAABG8QAKh4IAqLU5jOs2E7AkEKhkGW
+lnuV1cfWwxVNf0Q47nKQPjwWXze4wzm/6FeA3kDIw2x376yWeyjIEsgrqWgo1BOk
+1LnbtNF2yccI1yZCjAqXyU+cz8LRjIvOUGh2+7iau1iCFL31dAJQlrjPZ6RvlbxK
+/dCoW53sZnmn05IVtkbS4u7q1g2TWdPDpmOjI3idSmWfh6Rrmrv5PCwy7L2Rr7QJ
+b4SvPsoSh8PwIXlqob2VGzVcdGC76qM2+yvApE2bEY8i3tQYi8HROr8LhAphFy9g
+QHOy9BCJ4x/WxbC5iZzrumEQpVZiMeQ982/4I3QPZKWfH3um4fVttpLhm+Znef9V
+cLnTKJWo2zw3fUpwGxuOatXynuwkCNSfC1/xhnEQ5Q/6p4p2N9Ua558Qs+8CFUfD
+s19N6RcUUaBmi3MG+EMgWHq0q0Z7gXEF5N7y30S/ZM1EWDJZn3xvLSajPorO61lM
+FqL32qZ4oRiFkacxXc4nria4HcDE2SeoLqz/zaQsQDUFg0xWkXctZ9+sI6IBfAD/
+Hx7WxOcD1Emf1O9B7lqnPkEqEvF93vrtEQPAd/Nwx8I7l9NBZWUi8k9k22CYYgrH
+pRJYAdvlkti1mEixAabDWrJNMfRS+iO05mLqHRGWCWAHt3JTEckUHet2aA1WKM5C
+5NVkXtLoRDU/5MEX3gvs
+=AJeo
+-----END PGP SIGNATURE-----
