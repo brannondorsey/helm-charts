@@ -39,6 +39,23 @@ Each chart has its own README and CHANGELOG with information specific to its ins
 
 This chart repository is maintained by Brannon Dorsey. For questions or suggestions, please open an issue instead of emailing me directly. PRs welcome 😸.
 
+## Integrity
+
+All charts hosted in this repository are signed by [my PGP key: `607390646A4291D3`](https://keybase.io/brannondorsey/). You can verify packages are authentic while installing them by following the instructions below.
+
+```bash
+# Add my public key to your GPG keyring
+curl https://keybase.io/brannondorsey/pgp_keys.asc | gpg --import
+
+# You may also need to provide the --keyring /path/to/pubring.gpg if you're public keyring
+# is stored in a different location. If this fails, check out the link below as the gpg key
+# format may have changed:
+# https://github.com/helm/helm/issues/2843#issuecomment-424926564
+helm upgrade --install --verify mprime brannon/mprime
+```
+
+View the [Helm Provenance and Integrity](https://helm.sh/docs/topics/provenance/) docs for more info.
+
 ## Dev
 
 New charts versions are released by bumping the chart version in `charts/mychart/Chart.yaml` and then running:

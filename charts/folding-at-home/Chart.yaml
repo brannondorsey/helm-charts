@@ -2,9 +2,19 @@ apiVersion: v1
 name: folding-at-home
 description: Donate compute for medical research and help cure diseases
 icon: https://helm.brannon.online/icons/fah.png
+keywords:
+  - folding@home
+  - fahclient
+sources:
+  - https://github.com/brannondorsey/helm-charts
+maintainers:
+  - name: Brannon Dorsey
+    email: brannon@brannondorsey.com
+    url: https://github.com/brannondorsey
+home: https://github.com/brannondorsey/helm-charts/tree/master/charts/folding-at-home
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: 0.1.0
+version: 0.1.1
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
 appVersion: 7.5.1

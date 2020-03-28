@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v1
+appVersion: 7.5.1
+description: Donate compute for medical research and help cure diseases
+home: https://github.com/brannondorsey/helm-charts/tree/master/charts/folding-at-home
+icon: https://helm.brannon.online/icons/fah.png
+keywords:
+- - folding@home
+- - fahclient
+maintainers:
+- - email: brannon@brannondorsey.com
+  name: Brannon Dorsey
+  url: https://github.com/brannondorsey
+name: folding-at-home
+sources:
+- - https://github.com/brannondorsey/helm-charts
+version: 0.1.1
+
+...
+files:
+  folding-at-home-0.1.1.tgz: sha256:294076f6092e9a0c4d310ebe36e5d7c529a5216cb73cb00461c91a06f51e8855
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJef7pgCRBgc5BkakKR0wAA8rkQAIfcA3KvzKrF0sD3v9Ee7OqC
+U7gOStzxkr5IGagR5q5PBkoa0FgFU/Q+s6cJuAClXQqfZ4p0u0ZsszSN9C1q8xma
+hjS996BHcMA7x04UBBVj07VbaOl/7MYTrnrRkbr7W5jz2i4fF/ZFWbG0FUtygmLd
+wt1ju8YQyB9qbQMYddhehEiSiVq1pluRVu2SKXgduuSMWTd7Tdi1qgKdLiwjNd8e
+KFj0sckgzyQjhQATjFw4apeZxBOXcJQiXfXm56U6+K+sDI+vA3kIsapUIPirgdR9
+8sGOu4aH2HMA3TK9Q4sFOBrmb1G8dH2/31Iexpjxx4F4KbcSUpIA0J+TuM+dYOEd
+407nbtEEk2epSS3B0ITW0a9WQhNP4Oz7kyNnq8lEqLpLUYE0A1+fVozDbwED3Er3
+3h34phSvnB01aiIFPeIkRVwqi4kSvoPLQJU7vwKO4IoYQMX4UHbZANn8MIxYMZEa
+GauNgyTh4BQa1Fay0lDDjUMmwNPjmfJNmrIu64xR2LP69Bb6+rpKJ9/gMh9SLD2E
+wWOUbpKL0JQsSuBHCqVwLp0Dj0YpSO4cPBhCNjDLTqEcLefHpKWcX/aQkZWNABzU
+gRns+VVOFqdst6C6qoqvQzIEO9XUQ4b7OPmtH5QjvpDUi4nZe+YLufG3Dy7VJ5P+
+P2zDu/AteY9BSsqmsOjj
+=5fZ6
+-----END PGP SIGNATURE-----

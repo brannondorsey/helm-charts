@@ -3,6 +3,26 @@ entries:
   folding-at-home:
   - apiVersion: v1
     appVersion: 7.5.1
+    created: "2020-03-28T16:58:08.553941-04:00"
+    description: Donate compute for medical research and help cure diseases
+    digest: 294076f6092e9a0c4d310ebe36e5d7c529a5216cb73cb00461c91a06f51e8855
+    home: https://github.com/brannondorsey/helm-charts/tree/master/charts/folding-at-home
+    icon: https://helm.brannon.online/icons/fah.png
+    keywords:
+    - folding@home
+    - fahclient
+    maintainers:
+    - email: brannon@brannondorsey.com
+      name: Brannon Dorsey
+      url: https://github.com/brannondorsey
+    name: folding-at-home
+    sources:
+    - https://github.com/brannondorsey/helm-charts
+    urls:
+    - https://helm.brannon.online/repo/folding-at-home/folding-at-home-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: 7.5.1
     created: "2020-03-22T22:44:34.296811-04:00"
     description: Donate compute for medical research and help cure diseases
     digest: 9b95281a90e88d5e73587959f98a77efb63d3486ee4c0ca721a59f480a6680af
@@ -116,4 +136,4 @@ entries:
     urls:
     - https://helm.brannon.online/repo/xmrig/xmrig-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-28T16:55:26.667302-04:00"
+generated: "2020-03-28T16:58:08.552622-04:00"
