@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.1
+
+Sign packaged chart using PGP.
+
+- Add maintainers info and other details to `Chart.yaml`
+- Packaged charts are now signed via my private PGP key to verification integrity
+
 ## v0.2.0
 
 Adds more configuration values.

@@ -14,7 +14,28 @@ entries:
   mprime:
   - apiVersion: v1
     appVersion: p95v298b6
-    created: "2020-03-22T22:41:52.933707-04:00"
+    created: "2020-03-28T16:55:26.674043-04:00"
+    description: Donate compute to search for prime numbers!
+    digest: 56efafe84c181f7e7281b9ac71ac01fe34cb3d4297b51c100a1b1e4da0d53fc0
+    home: https://github.com/brannondorsey/helm-charts/tree/master/charts/mprime
+    icon: https://helm.brannon.online/icons/mprime.png
+    keywords:
+    - mersenne
+    - gimps
+    - prime
+    maintainers:
+    - email: brannon@brannondorsey.com
+      name: Brannon Dorsey
+      url: https://github.com/brannondorsey
+    name: mprime
+    sources:
+    - https://github.com/brannondorsey/helm-charts
+    urls:
+    - https://helm.brannon.online/repo/mprime/mprime-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v1
+    appVersion: p95v298b6
+    created: "2020-03-28T16:55:26.673606-04:00"
     description: Donate compute to search for prime numbers!
     digest: 24c7396c5ecf5be850bae926e1184915ddfd9dfc9780a494e58342e421321910
     icon: https://helm.brannon.online/icons/mprime.png
@@ -24,7 +45,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: p95v298b6
-    created: "2020-03-22T22:41:52.933226-04:00"
+    created: "2020-03-28T16:55:26.672502-04:00"
     description: Donate compute to search for prime numbers!
     digest: 8731bfa91c3ff368d922dc3d72e79b47a609de9afd6bd716ce086d0336069515
     icon: https://helm.brannon.online/icons/mprime.png
@@ -34,7 +55,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: p95v298b6
-    created: "2020-03-22T22:41:52.932343-04:00"
+    created: "2020-03-28T16:55:26.67046-04:00"
     description: Donate compute to search for prime numbers!
     digest: c942f4c2244da2b3ff09c6a359a5eac3bfe43d1e3a25ba9795acf339b449f33a
     icon: https://helm.brannon.online/icons/mprime.png
@@ -44,7 +65,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: p95v298b6
-    created: "2020-03-22T22:41:52.931858-04:00"
+    created: "2020-03-28T16:55:26.66956-04:00"
     description: Donate compute to search for prime numbers!
     digest: 5ddfc512a17718604013e01799da4066f7160d3091dea0de8fabf0fb2d4ee78f
     name: mprime
@@ -95,4 +116,4 @@ entries:
     urls:
     - https://helm.brannon.online/repo/xmrig/xmrig-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-28T16:42:07.67931-04:00"
+generated: "2020-03-28T16:55:26.667302-04:00"
