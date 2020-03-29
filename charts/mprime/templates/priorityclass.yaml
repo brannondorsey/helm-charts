@@ -1,0 +1,12 @@
+{{- if .Values.priorityClass.enabled }}
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: {{ include "mprime.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "mprime.labels" . | nindent 4 }}
+value: {{ .Values.priorityClass.value }}
+description: Used by the "{{ include "mprime.fullname" . }}" helm release.
+globalDefault: false
+{{- end }}

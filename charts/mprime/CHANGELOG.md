@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.0
+
+Add [PriorityClass](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/) control.
+
+- Add `priorityClass` object to `values.yaml`
+
 ## v0.2.1
 
 Sign packaged chart using PGP.

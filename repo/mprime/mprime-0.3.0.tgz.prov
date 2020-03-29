@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v1
+appVersion: p95v298b6
+description: Donate compute to search for prime numbers!
+home: https://github.com/brannondorsey/helm-charts/tree/master/charts/mprime
+icon: https://helm.brannon.online/icons/mprime.png
+keywords:
+- - mersenne
+- - gimps
+- - prime
+maintainers:
+- - email: brannon@brannondorsey.com
+  name: Brannon Dorsey
+  url: https://github.com/brannondorsey
+name: mprime
+sources:
+- - https://github.com/brannondorsey/helm-charts
+version: 0.3.0
+
+...
+files:
+  mprime-0.3.0.tgz: sha256:6fca3eeca877c6af81d07c38c1f77bed95a653c6e03f04cd062e2e0b3f44fdca
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJef+5ECRBgc5BkakKR0wAAVL4QAEayHqmqrgqSS/z+UYbkBNg8
+X8I1IccdO+/7LfnrGDZIjf/u5VEfpWdVFNZqsjq8UfD+sZYsj4r03cBcRttPiAdw
+by8pIPaahSeql6+A3VMPj9jHoQhgIFEXMSWFAwDJh2vOlzHJ88Rtu1SgvBwW/nD3
+NlFmhBNN8FJs4jMQF9Ro13gHZZFRx7DQ/B3jDH1AipSxliTZ/+d/ooQt3/5FIocY
+dv1G17B5BnWWBKaHrap5Tv6rZX518T4QcqpASysu0bqSqM28ugcAxfVUkVKOJTA/
+cp2in359HbgfI19fwI7OSo2vdw/lgX91BgVcjnHp/8XW9TDRxS0yxJ4pR9iQYLjh
+iZldvlX6P5o8tqkb96q+bVaZIZDWUrRMPtzcZ+Yj08ZkXDWgZy87gKrjF/Gv5h8E
+REo1ClijIx2SwUe2Tg/DpEaWoGMotyhZsw7XZfo2kRabmeh8/4z9zbY/w8sIJnNL
+VNf9JrmOExTAF3YUnM0KCK5P6HA5PNOqKJUBM4xdal/3dzCDGfGNnXZXSwFc2KEy
+vHiwghE4OyZq9IkAyDr7exP7VuGqbrFZez4ZSHU+WVOTRo4p3mxwDFRCeETSyLIn
+sPpkXOpm/jrIL4MH5Y2bnFw2VUm8bQdBvCDqWFgGxGBfxVJnn+R+zjkGCjOlKxPP
+ePD36Ue92FCAoYYmA7Em
+=qfJ+
+-----END PGP SIGNATURE-----
