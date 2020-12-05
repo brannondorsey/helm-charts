@@ -1,5 +1,5 @@
 FROM debian:buster-slim
-ARG MPRIME_VERSION=p95v298b6
+ARG MPRIME_VERSION=p95v303b6
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get -y update && \
   apt-get install -yq curl libxml2 && \

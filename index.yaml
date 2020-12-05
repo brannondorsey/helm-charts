@@ -33,6 +33,27 @@ entries:
     version: 0.1.0
   mprime:
   - apiVersion: v1
+    appVersion: p95v303b6
+    created: "2020-12-05T13:34:26.811073-05:00"
+    description: Donate compute to search for prime numbers!
+    digest: 38b93ad7c8f7ebb0fd08ed824272e55d2bbd8b33245cb5bd070c6d89547db305
+    home: https://github.com/brannondorsey/helm-charts/tree/master/charts/mprime
+    icon: https://helm.brannon.online/icons/mprime.png
+    keywords:
+    - mersenne
+    - gimps
+    - prime
+    maintainers:
+    - email: brannon@brannondorsey.com
+      name: Brannon Dorsey
+      url: https://github.com/brannondorsey
+    name: mprime
+    sources:
+    - https://github.com/brannondorsey/helm-charts
+    urls:
+    - https://helm.brannon.online/repo/mprime/mprime-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v1
     appVersion: p95v298b6
     created: "2020-03-28T20:39:32.158166-04:00"
     description: Donate compute to search for prime numbers!
@@ -156,4 +177,4 @@ entries:
     urls:
     - https://helm.brannon.online/repo/xmrig/xmrig-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-28T20:39:32.152698-04:00"
+generated: "2020-12-05T13:34:26.800848-05:00"
