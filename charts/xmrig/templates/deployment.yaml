@@ -34,10 +34,18 @@ spec:
             - {{ .Values.pool }}
             - -u
             - {{ .Values.email }}
+{{- if .Values.password }}
             - -p
             - {{ .Values.password }}
+{{- end }}
             - -k
             - --randomx-mode={{ .Values.randomxMode }}
+{{- if .Values.tls }}
+            - --tls
+{{- end }}
+{{- if .Values.keepalive }}
+            - -k
+{{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

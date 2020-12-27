@@ -10,8 +10,10 @@ image:
 
 pool: xmr.pool.minergate.com:45700
 email: email@example.com
-password: password
+password: ''
 poolDonationPercent: 1 # 1/100
+tls: false
+keepalive: false
 
 randomxMode: fast # also accepts "light" for replicas with < ~5GB RAM
 
